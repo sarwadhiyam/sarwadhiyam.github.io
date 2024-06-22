@@ -1,1 +1,1 @@
-# [🌐 SARWADHIYAM](https://princid.github.io/)
+# [🌐 SARWADHIYAM](https://sarwadhiyam.github.io/)
