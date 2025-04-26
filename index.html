@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sarwadhiyam - dPort | Global Import-Export Made Easy</title>
+		<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						colors: {
+							primary: "#1e93f7",
+							secondary: "rgb(29, 78, 216)",
+						},
+						borderRadius: {
+							none: "0px",
+							sm: "4px",
+							DEFAULT: "8px",
+							md: "12px",
+							lg: "16px",
+							xl: "20px",
+							"2xl": "24px",
+							"3xl": "32px",
+							full: "9999px",
+							button: "8px",
+						},
+					},
+				},
+			};
+		</script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+		/>
+		<link rel="stylesheet" href="styles/index.css" />
+		<script src="js/menu.js" defer></script>
+	</head>
+	<body>
+		<!-- Header/Navigation -->
+		<header
+			class="fixed w-full z-50 bg-opacity-95 bg-[#1a1f1c] backdrop-blur-md border-b border-[#1e93f7]"
+		>
+			<div class="container mx-auto px-6 py-4">
+				<div class="flex items-center justify-between">
+					<div class="flex items-center">
+						<a
+							href="javascript:void(0)"
+							class="text-2xl font-['Pacifico'] text-primary hover:text-[#fff] transition-colors"
+							>Sarwadhiyam</a
+						>
+					</div>
+					<nav class="desktop-nav hidden md:flex space-x-10">
+						<a
+							href="#vision"
+							class="nav-link text-gray-300 hover:text-white transition-colors"
+							>Vision</a
+						>
+						<a
+							href="#features"
+							class="nav-link text-gray-300 hover:text-white transition-colors"
+							>Features</a
+						>
+						<a
+							href="#about"
+							class="nav-link text-gray-300 hover:text-white transition-colors"
+							>About</a
+						>
+						<a
+							href="#contact"
+							class="nav-link text-gray-300 hover:text-white transition-colors"
+							>Contact</a
+						>
+					</nav>
+					<div class="desktop-early-access hidden md:block">
+						<button
+							class="bg-primary text-white px-6 py-2 !rounded-button whitespace-nowrap hover:bg-opacity-90 transition-all"
+						>
+							Get Early Access
+						</button>
+					</div>
+					<button
+						class="menu-trigger md:hidden w-8 h-8 flex items-center justify-center"
+					>
+						<i class="ri-menu-line ri-lg text-white"></i>
+					</button>
+				</div>
+			</div>
+		</header>
+
+		<!-- Mobile Menu -->
+		<div class="mobile-menu">
+			<div class="flex justify-end mb-8">
+				<button
+					class="close-menu w-8 h-8 flex items-center justify-center"
+				>
+					<i class="ri-close-line ri-lg text-white"></i>
+				</button>
+			</div>
+			<div class="mobile-menu-items">
+				<a href="#vision">Vision</a>
+				<a href="#features">Features</a>
+				<a href="#about">About</a>
+				<a href="#contact">Contact</a>
+				<button
+					class="btn-early-access bg-primary text-white px-6 py-2 !rounded-button whitespace-nowrap hover:bg-opacity-90 transition-all"
+				>
+					Get Early Access
+				</button>
+			</div>
+		</div>
+
+		<!-- Hero Section -->
+		<section
+			class="hero-bg min-h-screen flex items-center pt-28 pb-16 relative overflow-hidden"
+		>
+			<div class="absolute inset-0 z-0">
+				<div
+					id="particles-container"
+					class="w-full h-full opacity-40"
+				></div>
+				<video
+					autoplay
+					loop
+					muted
+					playsinline
+					class="absolute inset-0 w-full h-full object-cover opacity-30"
+				>
+					<source
+						src="https://public.readdy.ai/gen_page/hero_animation.mp4"
+						type="video/mp4"
+					/>
+				</video>
+			</div>
+			<div class="container mx-auto px-6 w-full relative z-10">
+				<div class="max-w-2xl">
+					<div
+						class="flex items-center space-x-3 mb-6 hover:transform hover:translate-y-[-2px] transition-transform"
+					>
+						<span
+							class="coming-soon-badge bg-primary bg-opacity-20 text-primary px-4 py-1 rounded-full text-sm font-medium hover:bg-opacity-30 transition-all"
+							>Coming Soon</span
+						>
+						<span
+							class="text-gray-400 hover:text-white transition-colors"
+							>August 2025</span
+						>
+					</div>
+					<h1
+						class="md:text-6xl font-bold mb-6 text-white leading-tight hover:scale-[1.02] transform transition-transform origin-left heroHeadText"
+					>
+						Revolutionizing <br />
+						<span
+							class="text-primary hover:text-opacity-90 transition-colors"
+							>Global Trade</span
+						>
+						<br />
+						for Everyone
+					</h1>
+					<p
+						class="text-xl text-gray-300 mb-8 max-w-lg hover:text-white transition-colors"
+					>
+						dPort empowers individuals and businesses to access the
+						global import-export system with unprecedented ease,
+						breaking down barriers to international trade.
+					</p>
+					<div
+						class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4"
+					>
+						<button
+							class="btn-primary bg-primary text-white px-8 py-3 !rounded-button whitespace-nowrap font-medium hover:scale-105 hover:shadow-lg hover:shadow-primary/20 transform transition-all w-full sm:w-auto"
+						>
+							Join Waitlist
+						</button>
+						<div>
+							<a href="pages/learnmore.html">
+								<button
+									class="border border-gray-600 text-white px-8 py-3 !rounded-button whitespace-nowrap hover:bg-white hover:bg-opacity-10 transition-all font-medium hover:scale-105 hover:border-primary transform w-full sm:w-auto"
+								>
+									Learn More
+								</button>
+							</a>
+						</div>
+					</div>
+					<div class="mt-16 scroll-indicator flex justify-center">
+						<div
+							id="scroll-indicator"
+							class="w-8 h-12 flex items-center justify-center border border-gray-600 rounded-full hover:border-primary transition-colors cursor-pointer group"
+						>
+							<div
+								class="w-1.5 h-3 bg-white rounded-full group-hover:bg-primary transition-colors"
+							></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Vision Section -->
+		<section id="vision" class="py-20 bg-gray-900">
+			<div class="container mx-auto px-6">
+				<div class="flex flex-col md:flex-row items-center gap-12">
+					<div class="md:w-1/2">
+						<h2 class="text-3xl font-bold mb-6">Our Vision</h2>
+						<p class="text-gray-300 mb-6">
+							At Sarwadhiyam, we believe that global trade should
+							be accessible to everyone. Our mission is to
+							democratize import-export operations, making it
+							possible for individuals and small businesses to
+							participate in international commerce without the
+							traditional barriers.
+						</p>
+						<p class="text-gray-300 mb-8">
+							With dPort, we're building a platform that
+							simplifies complex trade processes, provides
+							real-time market insights, and connects you directly
+							with global partners—all in one intuitive interface.
+						</p>
+						<div class="flex items-center space-x-8">
+							<div class="text-center">
+								<div class="text-primary text-4xl font-bold">
+									190+
+								</div>
+								<div class="text-gray-400 mt-2">Countries</div>
+							</div>
+							<div class="text-center">
+								<div class="text-primary text-4xl font-bold">
+									24/7
+								</div>
+								<div class="text-gray-400 mt-2">Support</div>
+							</div>
+							<div class="text-center">
+								<div class="text-primary text-4xl font-bold">
+									5000+
+								</div>
+								<div class="text-gray-400 mt-2">
+									Early Users
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="md:w-1/2">
+						<img
+							src="https://readdy.ai/api/search-image?query=A%20professional%2C%20clean%20visualization%20of%20global%20trade%20concepts.%20The%20image%20shows%20a%20stylized%203D%20interface%20of%20a%20digital%20trade%20platform%20with%20multiple%20screens%20displaying%20trade%20data%2C%20shipping%20routes%2C%20and%20currency%20exchange%20information.%20Modern%2C%20minimalist%20design%20with%20blue%20and%20teal%20color%20scheme.%20The%20visualization%20should%20look%20like%20a%20professional%20product%20mockup%20for%20a%20fintech%20platform.&width=600&height=500&seq=2&orientation=landscape"
+							alt="dPort Vision"
+							class="rounded-xl shadow-2xl w-full"
+						/>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Features Section -->
+		<section id="features" class="py-20 bg-gray-800">
+			<div class="container mx-auto px-6">
+				<div class="text-center mb-16">
+					<h2 class="text-3xl font-bold mb-4">Powerful Features</h2>
+					<p class="text-gray-300 max-w-2xl mx-auto">
+						dPort combines cutting-edge technology with
+						user-friendly design to make global trade accessible and
+						efficient.
+					</p>
+				</div>
+				<div
+					class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+				>
+					<!-- Feature 1 -->
+					<div
+						class="feature-card bg-gray-900 p-8 rounded-lg transition-all duration-300"
+					>
+						<div
+							class="w-12 h-12 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center mb-6"
+						>
+							<i class="ri-global-line ri-xl text-primary"></i>
+						</div>
+						<h3 class="text-xl font-semibold mb-4">
+							Global Market Access
+						</h3>
+						<p class="text-gray-400">
+							Connect with verified suppliers and buyers from over
+							190 countries with our AI-powered matching system.
+						</p>
+					</div>
+					<!-- Feature 2 -->
+					<div
+						class="feature-card bg-gray-900 p-8 rounded-lg transition-all duration-300"
+					>
+						<div
+							class="w-12 h-12 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center mb-6"
+						>
+							<i
+								class="ri-file-paper-2-line ri-xl text-primary"
+							></i>
+						</div>
+						<h3 class="text-xl font-semibold mb-4">
+							Simplified Documentation
+						</h3>
+						<p class="text-gray-400">
+							Automated document generation and verification for
+							customs clearance, reducing paperwork by up to 80%.
+						</p>
+					</div>
+					<!-- Feature 3 -->
+					<div
+						class="feature-card bg-gray-900 p-8 rounded-lg transition-all duration-300"
+					>
+						<div
+							class="w-12 h-12 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center mb-6"
+						>
+							<i
+								class="ri-secure-payment-line ri-xl text-primary"
+							></i>
+						</div>
+						<h3 class="text-xl font-semibold mb-4">
+							Secure Transactions
+						</h3>
+						<p class="text-gray-400">
+							End-to-end encrypted payment system with escrow
+							protection for international business transactions.
+						</p>
+					</div>
+					<!-- Feature 4 -->
+					<div
+						class="feature-card bg-gray-900 p-8 rounded-lg transition-all duration-300"
+					>
+						<div
+							class="w-12 h-12 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center mb-6"
+						>
+							<i class="ri-ship-line ri-xl text-primary"></i>
+						</div>
+						<h3 class="text-xl font-semibold mb-4">
+							Logistics Management
+						</h3>
+						<p class="text-gray-400">
+							Real-time tracking and optimization of shipping
+							routes with integrated customs clearance solutions.
+						</p>
+					</div>
+					<!-- Feature 5 -->
+					<div
+						class="feature-card bg-gray-900 p-8 rounded-lg transition-all duration-300"
+					>
+						<div
+							class="w-12 h-12 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center mb-6"
+						>
+							<i
+								class="ri-line-chart-line ri-xl text-primary"
+							></i>
+						</div>
+						<h3 class="text-xl font-semibold mb-4">
+							Market Intelligence
+						</h3>
+						<p class="text-gray-400">
+							Data-driven insights on market trends, pricing, and
+							demand forecasts to inform your trade decisions.
+						</p>
+					</div>
+					<!-- Feature 6 -->
+					<div
+						class="feature-card bg-gray-900 p-8 rounded-lg transition-all duration-300"
+					>
+						<div
+							class="w-12 h-12 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center mb-6"
+						>
+							<i class="ri-translate-2 ri-xl text-primary"></i>
+						</div>
+						<h3 class="text-xl font-semibold mb-4">
+							Language & Currency
+						</h3>
+						<p class="text-gray-400">
+							Automatic translation and currency conversion to
+							facilitate seamless cross-border communication.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Product Preview Section -->
+		<section class="py-20 bg-gray-900 relative overflow-hidden">
+			<div class="absolute top-0 left-0 w-full h-full opacity-10">
+				<div
+					class="w-full h-full"
+					style="
+						background-image: url('https://readdy.ai/api/search-image?query=Abstract%20digital%20network%20pattern%20with%20connecting%20dots%20and%20lines%20representing%20global%20connectivity%2C%20in%20blue%20and%20teal%20colors%20on%20a%20dark%20background.%20Minimalist%2C%20professional%20aesthetic%20suitable%20for%20a%20tech%20company.&width=1200&height=800&seq=3&orientation=landscape');
+						background-size: cover;
+					"
+				></div>
+			</div>
+			<div class="container mx-auto px-6 relative z-10">
+				<div class="text-center mb-16">
+					<h2 class="text-3xl font-bold mb-4">Experience dPort</h2>
+					<p class="text-gray-300 max-w-2xl mx-auto">
+						A glimpse into the future of global trade. Our platform
+						is designed with user experience at its core.
+					</p>
+				</div>
+				<div
+					class="flex flex-col md:flex-row items-center justify-center gap-12"
+				>
+					<div class="md:w-1/2">
+						<img
+							src="https://readdy.ai/api/search-image?query=A%20sleek%2C%20modern%20digital%20dashboard%20interface%20for%20a%20global%20trade%20platform.%20The%20image%20shows%20multiple%20screens%20with%20clean%20UI%20design%20featuring%20trade%20analytics%2C%20shipping%20tracking%2C%20and%20marketplace%20sections.%20Professional%2C%20minimalist%20design%20with%20dark%20theme%20and%20blue%20accent%20colors.%20The%20interface%20should%20look%20like%20a%20high-end%20fintech%20product%20with%20data%20visualizations%20and%20user-friendly%20controls.&width=600&height=450&seq=4&orientation=landscape"
+							alt="dPort Interface"
+							class="rounded-xl shadow-2xl w-full transform transition-all duration-500 hover:scale-105"
+						/>
+					</div>
+					<div class="md:w-1/2 space-y-8">
+						<div
+							class="bg-gray-800 p-6 rounded-lg border-l-4 border-primary"
+						>
+							<h3 class="text-xl font-semibold mb-2">
+								Intuitive Dashboard
+							</h3>
+							<p class="text-gray-400">
+								Monitor all your trade activities, market
+								insights, and shipment statuses from a single,
+								customizable dashboard.
+							</p>
+						</div>
+						<div
+							class="bg-gray-800 p-6 rounded-lg border-l-4 border-primary"
+						>
+							<h3 class="text-xl font-semibold mb-2">
+								AI-Powered Recommendations
+							</h3>
+							<p class="text-gray-400">
+								Receive personalized product and market
+								recommendations based on your trade history and
+								preferences.
+							</p>
+						</div>
+						<div
+							class="bg-gray-800 p-6 rounded-lg border-l-4 border-primary"
+						>
+							<h3 class="text-xl font-semibold mb-2">
+								Mobile Accessibility
+							</h3>
+							<p class="text-gray-400">
+								Manage your global trade operations on the go
+								with our fully-featured mobile application.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Testimonials Section -->
+		<section class="py-20 bg-gray-800">
+			<div class="container mx-auto px-6">
+				<div class="text-center mb-16">
+					<h2 class="text-3xl font-bold mb-4">
+						What Early Users Say
+					</h2>
+					<p class="text-gray-300 max-w-2xl mx-auto">
+						Hear from our beta testers who have experienced the
+						power of dPort firsthand.
+					</p>
+				</div>
+				<div
+					class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+				>
+					<!-- Testimonial 1 -->
+					<div class="bg-gray-900 p-8 rounded-lg">
+						<div class="flex items-center mb-6">
+							<div class="text-yellow-400 flex">
+								<i class="ri-star-fill ri-sm mr-1"></i>
+								<i class="ri-star-fill ri-sm mr-1"></i>
+								<i class="ri-star-fill ri-sm mr-1"></i>
+								<i class="ri-star-fill ri-sm mr-1"></i>
+								<i class="ri-star-fill ri-sm"></i>
+							</div>
+						</div>
+						<p class="text-gray-300 mb-6">
+							"As a small business owner, I never thought
+							international trade would be accessible to me. dPort
+							has completely changed that perception. The platform
+							is intuitive and has opened up new markets for my
+							products."
+						</p>
+						<div class="flex items-center">
+							<div
+								class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center mr-3"
+							>
+								<span class="text-primary font-semibold"
+									>EM</span
+								>
+							</div>
+							<div>
+								<h4 class="font-medium">Emily Martinez</h4>
+								<p class="text-gray-400 text-sm">
+									Artisan Crafts, USA
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- Testimonial 2 -->
+					<div class="bg-gray-900 p-8 rounded-lg">
+						<div class="flex items-center mb-6">
+							<div class="text-yellow-400 flex">
+								<i class="ri-star-fill ri-sm mr-1"></i>
+								<i class="ri-star-fill ri-sm mr-1"></i>
+								<i class="ri-star-fill ri-sm mr-1"></i>
+								<i class="ri-star-fill ri-sm mr-1"></i>
+								<i class="ri-star-fill ri-sm"></i>
+							</div>
+						</div>
+						<p class="text-gray-300 mb-6">
+							"The documentation automation alone has saved us
+							countless hours. What used to take days now takes
+							minutes. The market intelligence features have also
+							helped us identify new opportunities we would have
+							missed."
+						</p>
+						<div class="flex items-center">
+							<div
+								class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center mr-3"
+							>
+								<span class="text-primary font-semibold"
+									>RK</span
+								>
+							</div>
+							<div>
+								<h4 class="font-medium">Rajiv Kumar</h4>
+								<p class="text-gray-400 text-sm">
+									Tech Exports, India
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- Testimonial 3 -->
+					<div class="bg-gray-900 p-8 rounded-lg">
+						<div class="flex items-center mb-6">
+							<div class="text-yellow-400 flex">
+								<i class="ri-star-fill ri-sm mr-1"></i>
+								<i class="ri-star-fill ri-sm mr-1"></i>
+								<i class="ri-star-fill ri-sm mr-1"></i>
+								<i class="ri-star-fill ri-sm mr-1"></i>
+								<i class="ri-star-half-fill ri-sm"></i>
+							</div>
+						</div>
+						<p class="text-gray-300 mb-6">
+							"The secure payment system gave us the confidence to
+							work with new international partners. The platform's
+							verification process and escrow protection
+							eliminated the risk that had previously held us
+							back."
+						</p>
+						<div class="flex items-center">
+							<div
+								class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center mr-3"
+							>
+								<span class="text-primary font-semibold"
+									>LN</span
+								>
+							</div>
+							<div>
+								<h4 class="font-medium">Lucia Nguyen</h4>
+								<p class="text-gray-400 text-sm">
+									Organic Foods, Vietnam
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Coming Soon / Waitlist Section -->
+		<section id="contact" class="py-20 bg-gray-900">
+			<div class="container mx-auto px-6">
+				<div class="max-w-3xl mx-auto text-center">
+					<div
+						class="inline-block mb-6 px-4 py-1 bg-primary bg-opacity-10 rounded-full"
+					>
+						<span class="text-primary font-medium"
+							>Launching Q3 2025</span
+						>
+					</div>
+					<h2 class="text-4xl font-bold mb-6">
+						Be Among the First to Experience dPort
+					</h2>
+					<p class="text-gray-300 mb-10 max-w-2xl mx-auto">
+						Join our waitlist to get early access to the platform
+						and exclusive benefits when we launch. We're
+						revolutionizing global trade one connection at a time.
+					</p>
+					<div
+						class="flex flex-col md:flex-row items-center justify-center mb-12"
+					>
+						<div
+							class="relative w-full md:w-96 mb-4 md:mb-0 md:mr-4"
+						>
+							<input
+								type="email"
+								placeholder="Enter your email address"
+								class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-button text-white focus:border-primary"
+							/>
+						</div>
+						<button
+							class="w-full md:w-auto bg-primary text-white px-8 py-3 !rounded-button whitespace-nowrap hover:bg-opacity-90 transition-all font-medium"
+						>
+							Join Waitlist
+						</button>
+					</div>
+					<div class="flex flex-wrap justify-center gap-6">
+						<div class="flex items-center">
+							<div
+								class="w-6 h-6 flex items-center justify-center mr-2"
+							>
+								<i
+									class="ri-shield-check-line text-primary"
+								></i>
+							</div>
+							<span class="text-gray-300 text-sm"
+								>Secure & Confidential</span
+							>
+						</div>
+						<div class="flex items-center">
+							<div
+								class="w-6 h-6 flex items-center justify-center mr-2"
+							>
+								<i class="ri-spam-2-line text-primary"></i>
+							</div>
+							<span class="text-gray-300 text-sm">No Spam</span>
+						</div>
+						<div class="flex items-center">
+							<div
+								class="w-6 h-6 flex items-center justify-center mr-2"
+							>
+								<i class="ri-user-star-line text-primary"></i>
+							</div>
+							<span class="text-gray-300 text-sm"
+								>Priority Access</span
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- About Section -->
+		<section id="about" class="py-20 bg-gray-800">
+			<div class="container mx-auto px-6">
+				<div class="flex flex-col md:flex-row items-center gap-12">
+					<div class="md:w-1/2">
+						<img
+							src="https://readdy.ai/api/search-image?query=A%20professional%20team%20of%20diverse%20business%20people%20working%20together%20in%20a%20modern%20office%20environment.%20The%20image%20shows%20a%20collaborative%20meeting%20with%20people%20analyzing%20trade%20data%20on%20screens.%20Professional%2C%20corporate%20setting%20with%20blue%20and%20teal%20color%20accents.%20Natural%2C%20authentic%20representation%20of%20business%20professionals%20from%20different%20backgrounds.&width=600&height=400&seq=5&orientation=landscape"
+							alt="Sarwadhiyam Team"
+							class="rounded-xl shadow-2xl w-full"
+						/>
+					</div>
+					<div class="md:w-1/2">
+						<h2 class="text-3xl font-bold mb-6">
+							About Sarwadhiyam
+						</h2>
+						<p class="text-gray-300 mb-6">
+							Founded in 2023, Sarwadhiyam is a technology company
+							dedicated to democratizing global trade. Our team
+							combines expertise in international commerce,
+							fintech, and artificial intelligence to create
+							solutions that make cross-border trade accessible to
+							everyone.
+						</p>
+						<p class="text-gray-300 mb-8">
+							Our flagship product, dPort, represents our vision
+							of a world where geographical boundaries no longer
+							limit commercial opportunities. We're backed by
+							leading investors who share our commitment to
+							transforming international trade.
+						</p>
+						<div class="flex flex-wrap gap-4">
+							<div class="bg-gray-900 px-4 py-2 rounded-full">
+								<span class="text-gray-300"
+									>Fintech Innovation</span
+								>
+							</div>
+							<div class="bg-gray-900 px-4 py-2 rounded-full">
+								<span class="text-gray-300">Global Trade</span>
+							</div>
+							<div class="bg-gray-900 px-4 py-2 rounded-full">
+								<span class="text-gray-300">AI-Powered</span>
+							</div>
+							<div class="bg-gray-900 px-4 py-2 rounded-full">
+								<span class="text-gray-300"
+									>Secure Transactions</span
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Footer -->
+		<footer class="bg-gray-900 pt-16 pb-8">
+			<div class="container mx-auto px-6">
+				<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+					<div>
+						<a
+							href="javascript:void(0)"
+							class="text-2xl font-['Pacifico'] text-white mb-6 inline-block"
+							>Sarwadhiyam</a
+						>
+						<p class="text-gray-400 mb-6">
+							Revolutionizing global trade through technology and
+							innovation.
+						</p>
+						<div class="flex space-x-4">
+							<a
+								href="javascript:void(0)"
+								class="social-icon w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full text-gray-400"
+							>
+								<i class="ri-twitter-x-line"></i>
+							</a>
+							<a
+								href="javascript:void(0)"
+								class="social-icon w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full text-gray-400"
+							>
+								<i class="ri-linkedin-line"></i>
+							</a>
+							<a
+								href="javascript:void(0)"
+								class="social-icon w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full text-gray-400"
+							>
+								<i class="ri-instagram-line"></i>
+							</a>
+							<a
+								href="javascript:void(0)"
+								class="social-icon w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full text-gray-400"
+							>
+								<i class="ri-facebook-line"></i>
+							</a>
+						</div>
+					</div>
+					<div>
+						<h3 class="text-lg font-semibold mb-6">Company</h3>
+						<ul class="space-y-4">
+							<li>
+								<a
+									href="javascript:void(0)"
+									class="text-gray-400 hover:text-primary transition-colors"
+									>About Us</a
+								>
+							</li>
+							<li>
+								<a
+									href="javascript:void(0)"
+									class="text-gray-400 hover:text-primary transition-colors"
+									>Careers</a
+								>
+							</li>
+							<li>
+								<a
+									href="javascript:void(0)"
+									class="text-gray-400 hover:text-primary transition-colors"
+									>Press</a
+								>
+							</li>
+							<li>
+								<a
+									href="javascript:void(0)"
+									class="text-gray-400 hover:text-primary transition-colors"
+									>Blog</a
+								>
+							</li>
+						</ul>
+					</div>
+					<div>
+						<h3 class="text-lg font-semibold mb-6">Resources</h3>
+						<ul class="space-y-4">
+							<li>
+								<a
+									href="javascript:void(0)"
+									class="text-gray-400 hover:text-primary transition-colors"
+									>Documentation</a
+								>
+							</li>
+							<li>
+								<a
+									href="javascript:void(0)"
+									class="text-gray-400 hover:text-primary transition-colors"
+									>Help Center</a
+								>
+							</li>
+							<li>
+								<a
+									href="javascript:void(0)"
+									class="text-gray-400 hover:text-primary transition-colors"
+									>Trade Guides</a
+								>
+							</li>
+							<li>
+								<a
+									href="javascript:void(0)"
+									class="text-gray-400 hover:text-primary transition-colors"
+									>API</a
+								>
+							</li>
+						</ul>
+					</div>
+					<div>
+						<h3 class="text-lg font-semibold mb-6">Contact</h3>
+						<ul class="space-y-4">
+							<li class="flex items-start">
+								<div
+									class="w-5 h-5 flex items-center justify-center mr-3 mt-1"
+								>
+									<i class="ri-map-pin-line text-primary"></i>
+								</div>
+								<span class="text-gray-400"
+									>123 Trade Avenue, Singapore 189204</span
+								>
+							</li>
+							<li class="flex items-start">
+								<div
+									class="w-5 h-5 flex items-center justify-center mr-3 mt-1"
+								>
+									<i class="ri-mail-line text-primary"></i>
+								</div>
+								<span class="text-gray-400">sarwadhiyam@gmail.com</span>
+							</li>
+							<li class="flex items-start">
+								<div
+									class="w-5 h-5 flex items-center justify-center mr-3 mt-1"
+								>
+									<i class="ri-phone-line text-primary"></i>
+								</div>
+								<span class="text-gray-400">+91 1234567890</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="border-t border-gray-800 pt-8">
+					<div
+						class="flex flex-col md:flex-row justify-between items-center"
+					>
+						<p class="text-gray-500 text-sm mb-4 md:mb-0">
+							© 2025 Sarwadhiyam. All rights reserved.
+						</p>
+						<div class="flex space-x-6">
+							<a
+								href="javascript:void(0)"
+								class="text-gray-500 text-sm hover:text-gray-400 transition-colors"
+								>Terms of Service</a
+							>
+							<a
+								href="javascript:void(0)"
+								class="text-gray-500 text-sm hover:text-gray-400 transition-colors"
+								>Privacy Policy</a
+							>
+							<a
+								href="javascript:void(0)"
+								class="text-gray-500 text-sm hover:text-gray-400 transition-colors"
+								>Cookies</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				// Interactive particles effect
+				const particlesContainer = document.getElementById(
+					"particles-container"
+				);
+				const numParticles = 50;
+				let particles = [];
+				function createParticle(x, y) {
+					const particle = document.createElement("div");
+					particle.className = "particle";
+					particle.style.left = x + "px";
+					particle.style.top = y + "px";
+					return particle;
+				}
+				function initParticles() {
+					const containerRect =
+						particlesContainer.getBoundingClientRect();
+					for (let i = 0; i < numParticles; i++) {
+						const x = Math.random() * containerRect.width;
+						const y = Math.random() * containerRect.height;
+						const particle = createParticle(x, y);
+						particles.push(particle);
+						particlesContainer.appendChild(particle);
+					}
+				}
+				function updateParticles(mouseX, mouseY) {
+					particles.forEach((particle) => {
+						const rect = particle.getBoundingClientRect();
+						const dx = mouseX - (rect.left + rect.width / 2);
+						const dy = mouseY - (rect.top + rect.height / 2);
+						const distance = Math.sqrt(dx * dx + dy * dy);
+						const maxDistance = 200;
+						if (distance < maxDistance) {
+							const scale = 1 - distance / maxDistance;
+							const angle = Math.atan2(dy, dx);
+							const translateX = Math.cos(angle) * 60 * scale;
+							const translateY = Math.sin(angle) * 60 * scale;
+							particle.style.transform = `translate(${translateX}px, ${translateY}px) scale(${
+								1 + scale * 2
+							})`;
+							particle.style.backgroundColor = `rgba(37, 99, 235, ${
+								0.6 + scale * 0.4
+							})`;
+							particle.style.transition =
+								"transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.4s ease-out";
+						} else {
+							particle.style.transform =
+								"translate(0, 0) scale(1)";
+							particle.style.backgroundColor =
+								"rgba(37, 99, 235, 0.3)";
+						}
+					});
+				}
+				particlesContainer.addEventListener("mousemove", (e) => {
+					const rect = particlesContainer.getBoundingClientRect();
+					const mouseX = e.clientX - rect.left;
+					const mouseY = e.clientY - rect.top;
+					updateParticles(mouseX, mouseY);
+				});
+				particlesContainer.addEventListener("mouseleave", () => {
+					particles.forEach((particle) => {
+						particle.style.transform = "translate(0, 0) scale(1)";
+						particle.style.backgroundColor =
+							"rgba(61, 121, 84, 0.3)";
+					});
+				});
+				initParticles();
+				// Smooth scrolling for anchor links
+				document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+					anchor.addEventListener("click", function (e) {
+						e.preventDefault();
+						const targetId = this.getAttribute("href");
+						if (targetId === "#") return;
+						const targetElement = document.querySelector(targetId);
+						if (targetElement) {
+							window.scrollTo({
+								top: targetElement.offsetTop - 80,
+								behavior: "smooth",
+							});
+						}
+					});
+				});
+			});
+			document.addEventListener("DOMContentLoaded", function () {
+				// Feature card hover effect
+				const featureCards = document.querySelectorAll(".feature-card");
+				featureCards.forEach((card) => {
+					card.addEventListener("mouseenter", function () {
+						this.classList.add("shadow-lg");
+					});
+					card.addEventListener("mouseleave", function () {
+						this.classList.remove("shadow-lg");
+					});
+				});
+			});
+			document.addEventListener("DOMContentLoaded", function () {
+				const scrollIndicator =
+					document.getElementById("scroll-indicator");
+				if (scrollIndicator) {
+					scrollIndicator.addEventListener("click", function () {
+						const visionSection = document.getElementById("vision");
+						if (visionSection) {
+							window.scrollTo({
+								top: visionSection.offsetTop - 80,
+								behavior: "smooth",
+							});
+						}
+					});
+				}
+				// Navbar scroll effect
+				const header = document.querySelector("header");
+				window.addEventListener("scroll", function () {
+					if (window.scrollY > 50) {
+						header.classList.add("bg-opacity-95");
+						header.classList.add("shadow-md");
+					} else {
+						header.classList.remove("bg-opacity-95");
+						header.classList.remove("shadow-md");
+					}
+				});
+			});
+		</script>
+	</body>
+</html>
