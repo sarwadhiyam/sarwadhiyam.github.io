@@ -39,10 +39,25 @@ body {
 }
 
 .hero-bg {
-	background-image: url("https://readdy.ai/api/search-image?query=A%20sleek%2C%20modern%20abstract%20digital%20representation%20of%20global%20trade%20and%20commerce.%20The%20image%20shows%20a%20stylized%20world%20map%20with%20glowing%20connection%20lines%20representing%20trade%20routes%2C%20with%20a%20gradient%20from%20deep%20blue%20to%20teal.%20The%20left%20side%20has%20a%20clean%2C%20empty%20space%20for%20text%20overlay%2C%20while%20the%20right%20side%20shows%20more%20detailed%20visualization%20of%20digital%20trade%20concepts.%20Professional%2C%20minimalist%20aesthetic%20suitable%20for%20a%20fintech%20landing%20page.&width=1600&height=800&seq=1&orientation=landscape");
+	background-image: url("https://images.unsplash.com/photo-1730644824079-64b92172c120?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 	background-size: cover;
 	background-position: center right;
 	position: relative;
+}
+
+/* Responsive Styles for Hero Background */
+@media (max-width: 768px) {
+	.hero-bg {
+		background-position: center center; /* Center the image for smaller screens */
+		background-size: contain; /* Ensure the image fits within the viewport */
+	}
+}
+
+@media (max-width: 480px) {
+	.hero-bg {
+		background-size: cover; /* Cover the viewport for very small screens */
+		background-position: top center; /* Adjust position for better visibility */
+	}
 }
 
 /* Mobile Menu */

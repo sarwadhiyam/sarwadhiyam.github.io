@@ -18,6 +18,22 @@ canvas {
 	background-position: center right;
 	position: relative;
 }
+
+/* Responsive Styles for Hero Background */
+@media (max-width: 768px) {
+	.hero-bg {
+		background-position: center center; /* Center the image for smaller screens */
+		background-size: contain; /* Ensure the image fits within the viewport */
+	}
+}
+
+@media (max-width: 480px) {
+	.hero-bg {
+		background-size: cover; /* Cover the viewport for very small screens */
+		background-position: top center; /* Adjust position for better visibility */
+	}
+}
+
 #particles-container {
 	position: relative;
 }
